@@ -1,0 +1,25 @@
+
+sidebar{
+    display: block;
+    position: fixed;
+    top:40%;
+    left:96%;
+    
+    
+}
+.ulist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:2.2rem;
+    list-style-type: none;
+    border:solid 1px;
+    border-radius:3px;
+    padding:1vh;
+    margin-left:0.5rem;
+}
+.ulist img{
+    width: 2rem;
+    height: 2rem;
+}

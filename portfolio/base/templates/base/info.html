@@ -1,0 +1,66 @@
+{% comment %} {% extends 'base.html' %}
+{% load static %}
+{% block ratio %}  {% endcomment %}
+{% load static %}
+<span id="info">
+    <div class="proj_header">
+        <hr>
+        <h5>INFO ABOUT ME.</h5>
+        
+    </div>
+    <div class="info">
+        
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+     
+        <div class="cards">
+            <label class="card" for="item-1" id="cont-1">
+                <div class ="interest">
+        
+                    <span>
+                        <h1>My Life.</h1>
+                        <info>Yes, that's me in the image. I began coding at the young age of 15, like many other skilled coders. My journey started with the help of the SoloLearn app on my mobile device and Replit. Driven by my passion for learning something new at that time, my interest grew in the field of coding and computers. I chose engineering to satisfy my hunger for knowledge in this field. Currently, I am pursuing a B.E. in Computer Engineering. I am a proficient Django Developer and an explorer of the Python language. Additionally, I am venturing into other fields such as Robotics, AI, and ML. I possess knowledge of Python, HTML, CSS, JS, and C languages and frameworks like Django and React.I enjoy coding and sports, particularly cricket which I played during my school days. As a team player, I thrive on collaborative efforts and have accomplished much at a young age through focus and dedication. In addition, going to the gym regularly for over a year has been transformative both physically and mentally, becoming a habit I look forward to and crave for the endorphins and sense of accomplishment each workout brings.</info>
+                    </span>
+                    <img src="{% static 'image/mylife.jpg' %}" alt="image">
+                </div>
+                
+            </label> 
+            <label class="card" for="item-2" id="cont-2">
+                <div class ="interest">
+        
+                    <span>
+                        <h1>ME TIFOSI.</h1>
+                        <info>As a Ferrari fan, there's nothing quite like the thrill of watching Formula One racing. The speed, the skill, and the precision of the drivers and their teams is truly awe-inspiring. But for me, there's one team that stands above the rest: Ferrari.
+
+                            There's just something about the Prancing Horse that captures my imagination. Maybe it's the iconic red livery, or the legendary drivers who have raced for the team over the years. Whatever it is, I can't get enough.
+                            
+                            Watching Ferrari compete in F1 is like watching a masterclass in racing. The team's dedication to excellence is evident in everything they do, from their pit stops to their engineering prowess. And when a Ferrari driver crosses the finish line first, it's a moment of pure euphoria that I'll never forget. For me, there's no better team in all of motorsport than Ferrari in F1.</info>
+                    </span>
+                    <img src="{% static 'image/ferrari.jpeg' %}" alt="image">
+                </div>
+            </label>
+            <label class="card" for="item-3" id="cont-3">
+                <div class ="interest">
+        
+                    <span>
+                        <h1>MUSIC.</h1>
+                        <info>I am huge fan of artists like Kendrick Lamar, J. Cole, The Weeknd, and Frank Ocean, I appreciate the depth and complexity of their music. Each artist has a unique style and perspective that draws me in and keeps me listening.
+
+                            Kendrick Lamar's socially conscious lyrics and storytelling ability always leave me feeling inspired and introspective. J. Cole's introspective and vulnerable approach to rap always hits close to home, and his ability to capture the complexity of life's struggles and joys resonates deeply with me.
+                            
+                            The Weeknd's smooth vocals and atmospheric soundscapes create a hypnotic and immersive listening experience that always leaves me wanting more. And Frank Ocean's soulful and honest approach to music feels like a breath of fresh air in a world of commercialized pop.
+                            
+                            These artists have a way of touching on universal themes like love, loss, and social justice, while still maintaining a personal and authentic touch. Their music is not just entertainment but a reflection of the human experience that can speak to anyone who listens.</info>
+                    </span>
+                    <img src="{% static 'image/jcole.jpeg' %}" alt="image">
+                </div>
+            </label>
+            
+        </div>
+        
+        </div>
+    </div>
+</span>
+{% comment %} {% endblock ratio %}  {% endcomment %}

@@ -1,0 +1,39 @@
+
+{% comment %} {% extends 'base.html' %}
+{% load static %}
+{% block ratio %} {% endcomment %}
+{% load static %}
+<div id="contact">
+    <div class="proj_header">
+        <hr>
+        <h5>Say hello 👋</h5>
+    </div>
+
+    <h3 class="proj_h1">Contact Form</h3>
+    <div class="cnt_section">
+        <div class="cnt_form">
+            <form method="post" action="{% url 'contact' %}" class="cntfrm">
+                {% csrf_token %}
+                <label>Name:</label>
+                <textarea name="name" placeholder=""></textarea>
+                <label>Email:</label>
+                <textarea name="email" placeholder=""></textarea>
+                <label>Message:</label>
+                <textarea class="msg" name="message" placeholder="Services are not available currently. You can email me on sohampanchal1469@gmail.com"></textarea>
+                <input class="submit" type="submit" />
+            </form>
+            <div class="socials">
+                <label>Socials:</label>
+                <div class="social_link">
+                    <div class="github"><a href="https://github.com/001AM"><img src="{% static 'image/github.svg'%}" alt="github"></a></div>
+                    <div class="linkedin"><a href="https://www.linkedin.com/in/soham-panchal-430956255/"><img src="{% static 'image/linkedin.svg'%}" alt="linkedin"></a></div>
+                    <div class="instagram"><a href="https://www.instagram.com/sohammm04/?hl=en"><img src="{% static 'image/instagram.svg'%}" alt="instagram"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_img">
+            <img src="{% static 'image/subscribe.svg'%}">
+        </div>
+    </div>
+</div>
+{% comment %} {% endblock ratio %} {% endcomment %}
