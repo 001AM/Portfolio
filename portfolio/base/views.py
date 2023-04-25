@@ -2,11 +2,10 @@ from django.shortcuts import render, redirect
 from time import sleep
 data={
         'text':['home','info','experience','contact'],
-        'url':['h','i','e','c']
     }
 
 def home(request):
-    template="main.html"
+    template="index.html"
     return render(request,template,data)
 
 def contact(request):

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/sidebar.css' %}" />
+    <link rel="stylesheet" href="{% static 'style/home.css' %}" /> 
+    <link rel="stylesheet" href="{% static 'style/experience.css' %}" /> 
+    <link rel="stylesheet" href="{% static 'style/dropdown.css' %}" />
+    <link rel="stylesheet" href="{% static 'style/info.css' %}" />
+    <link rel="stylesheet" href="{% static 'style/contact.css' %}" />
+    <title>SOHAM PANCHAL</title>
+    <link rel="icon" href="{% static 'image/website-portfolio.svg' %}" type="image/icon type">
+</head>
+<body>
+    {% include 'base/sidebar.html' %}
+
+        {% include 'base/home.html' %}
+        {% include 'base/info.html' %}
+        {% include 'base/experience.html' %}
+        {% include 'base/contact.html' %}
+    
+</body>
+<script src="/static/js/script.js"></script>
+</html>

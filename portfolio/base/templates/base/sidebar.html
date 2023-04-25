@@ -1,0 +1,13 @@
+{% load static %}
+
+<sidebar class="sidebar">
+    <ul class="ulist">
+        {% for u in text %}
+            
+            <li>
+                <a href ="#{{u}}" ><img src={% static 'image/'|add:u|add:'.svg' %} alt="{{u}}"/></a>
+            </li>
+
+        {% endfor %}
+    </ul>
+</sidebar>
