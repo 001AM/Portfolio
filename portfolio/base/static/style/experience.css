@@ -1,6 +1,6 @@
 @import url("https://fonts.google.com/specimen/Poppins?query=poppins");
 .fk_tab{
-    height: 100vh;  
+    height: 100%;  
 }
 .fk_bar{
     display: grid;
@@ -163,7 +163,7 @@ h5{
     
 }
 .proj_cont{
-    height: 58vh;
+    height: 85%;
     width: 40vh;
     border:1px solid black;
     border-radius: 10px;
